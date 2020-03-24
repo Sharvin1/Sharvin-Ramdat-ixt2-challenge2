@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clock</title>
+		<link rel="stylesheet" type= "text/css" href="css/index.css">
+		<script type= "text/javascript" defer>
+			
+			function showTime(){
+				var today = new Date();
+
+				//get time
+				var currentHours = today.getHours();
+				var currentMinutes = today.getMinutes();
+				var currentSeconds = today.getSeconds();
+
+			/*	let color1 = "#EE1000";
+				let color2 = "000000";
+				gradient = "linear-gradient(to left"+", "+ color1 +", "+ color2 +")"; 
+
+				var body = document.getElementById('background');
+
+				if (currentHours > 18) {
+					body.style.background = "-webkit-linear-gradient(180deg"+ color1 +", "+ color2 +")"; 
+					-->een simpele kleur als groen werkt wel. Gradient helaas niet. Wou namelijk een donkere achtergrond na 18.00
+				}
+				else {
+					//De huidige kleur
+				} */
+				
+
+				//een nul voor de getallen zetten als het kleiner is dan 10 --> opmaak
+				currentHours = (currentHours < 10) ? "0" + currentHours : currentHours;
+				currentMinutes = (currentMinutes < 10) ? "0" + currentMinutes : currentMinutes;
+				currentSeconds = (currentSeconds < 10) ? "0" + currentSeconds : currentSeconds;
+
+
+				//set time in the html between : :
+				var time = currentHours + ":" + currentMinutes + ":" + currentSeconds;	
+				document.getElementById("digitalClock").innerHTML = time;
+
+				//refresh the time
+				setTimeout(showTime, 1000);
+			}
+
+			function showDate(){
+				var today = new Date();
+				//get date
+				var currentYear = today.getFullYear();
+				var currentMonth = today.getMonth();
+				var currentDay = today.getDate();
+
+				//date in words instead of numbers
+				var months = new Array ('Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'); 
+				var date = currentDay + " " + months[currentMonth] + " " + currentYear;
+				document.getElementById('date').innerHTML = date;
+			}
+
+			window.onload = function() {
+				showTime();
+				showDate();
+			};
+		</script>
+	</head>
+
+	<body id= "background">	
+		<!--sterretjes geprobeerd te maken-->
+		<div id="star1"class= "star"></div>
+		<div id="star2"class= "star"></div>
+		<div id="star3"class= "star"></div>
+		<div id= "star4"class= "star"></div>
+		<div id= "star5"class= "star"></div>
+	<!--<div id="star6"class= "star"></div>
+		<div id="star7"class= "star"></div>
+		<div id="star8"class= "star"></div>
+		<div id= "star9"class= "star"></div>
+		<div id= "star10"class= "star"></div> -->			
+			
+		<h1>Het is vandaag</h1>
+		<div id= "date"></div>
+		<div id="digitalClock"></div>
+	</body>
+</html>
