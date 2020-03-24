@@ -73,13 +73,10 @@ h1 {
     animation: blink 1500ms steps(5, start) infinite;
 }
 @keyframes blink {
-  from {
-    opacity: 0.9;
-  }
 
-  to {
-    opacity: 0.3;
-  }
+    0% { opacity: 0.9;}
+    50% {opacity: 0.2;}
+    100% {opacity: 0.9;}
 
 }
 
@@ -151,6 +148,7 @@ h1 {
     animation-duration: 3s;
     animation-timing-function: linear; /*zorgt dat de snelheid van de animatie constant blijft */
     animation-iteration-count: infinite; 
+
 
 }
 @keyframes star3
