@@ -29,6 +29,20 @@
 				} */
 				
 
+
+				/*
+				if (currentHours >= 12 && currentHours < 18) {
+					document.getElementById('tekst').innerHTML = "Goedemiddag!";
+				}
+				else if(currentHours >= 18) {
+					document.getElementById('tekst').innerHTML = "Goedeavond!";
+				}
+				else if(currentHours > 5 && currentHours < 12) {
+					document.getElementById('tekst').innerHTML = "Goedemorgen!";
+				} */
+
+				
+
 				//een nul voor de getallen zetten als het kleiner is dan 10 --> opmaak
 				currentHours = (currentHours < 10) ? "0" + currentHours : currentHours;
 				currentMinutes = (currentMinutes < 10) ? "0" + currentMinutes : currentMinutes;
@@ -75,7 +89,8 @@
 		<div id="star8"class= "star"></div>
 		<div id= "star9"class= "star"></div>
 		<div id= "star10"class= "star"></div> -->			
-			
+	<!--	<h1 id= "tekst"></h1>
+	</br> -->
 		<h1>Het is vandaag</h1>
 		<div id= "date"></div>
 		<div id="digitalClock"></div>
