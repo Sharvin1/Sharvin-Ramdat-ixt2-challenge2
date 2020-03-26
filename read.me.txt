@@ -1,0 +1,11 @@
+Challenge 2: onderbouwing
+
+Lay-out
+Ik heb voor deze lay out gekozen, omdat ik graag wat vrolijks en kleurrijks wou maken als dit in principe gebruikt wordt op Mars. De mensen daar missen vast kleuren aangezien ze daar vgm een eentonige rode kleur zien.
+
+Wat ging er goed?
+De digitale klok maken ging in principe vrij makkelijk. Na de uitleg was alles veel duidelijker en kon ik het ook zelf maken ipv alles van Google pakken/checken. Dit opdracht heeft mij wel meer inzichten gegeven in Javascript.
+
+Wat gin er mis?
+In eerste instantie wou ik de kleuren veranderen na 19.00 uur, naar een ietswat donkere setting. Dit wou ik bereiken door donkere kleuren te gebruiken. Dit lukte mij echter niet, omdat blijkbaar kan je niet zomaar de gradient veranderen dat ik gemaakt heb. Hiervoor moet je meer code inzetten, wat mij niet lukte en ik in comments geplaatst heb. Natuurlijk, het veranderen naar een kleur lukte mij wel. Maar na veel googlen merkte ik dat ik de gradient niet zelf ga kunnen maken en het dus erbij heb gelaten.
+
